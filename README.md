@@ -1,20 +1,88 @@
-SaaS $0→$5k Launch Pack
+# web-frontend
 
-What this bundle is
-- A lean, high-conversion starter pack for SaaS founders selling to SMBs. Designed to get paying customers fast without ad spend.
-- Includes: lead magnet draft (convertible to PDF), 3 cold-email templates + follow-ups, a 1-page pitch-deck outline, a Notion SOP for outreach & tracking, launch copy (tweet, Reddit, DM), and a minimal landing page HTML.
+React + TypeScript Vite frontend for the SaaS Launch Pack.
 
-Where files are
-- /root/watson/template-pack/lead_magnet.md
-- /root/watson/template-pack/cold_email_sequence.txt
-- /root/watson/template-pack/pitch_deck_outline.md
-- /root/watson/template-pack/notion_sop.md
-- /root/watson/template-pack/launch_texts.md
-- /root/watson/template-pack/landing_page.html
+Quick start
 
-Next actions (pick one)
-1) Convert lead_magnet.md → PDF (I can generate a PDF if you want).  
-2) I start outreach: give me a short target list (niche, 50 companies/people) and I’ll draft personalized variants and prepare an export CSV.  
-3) I deploy the landing page to GitHub Pages and wire a Gumroad buy link (requires your auth) — or I can leave placeholders and show the marketing flow.
+1. Install dependencies
 
-Run: tell me which next action (1/2/3) or say "start outreach" with the niche/vertical and I’ll run step 2.
+   cd /root/watson/web-frontend
+   npm install
+
+2. Run the frontend dev server
+
+   npm run dev
+
+3. Run the lightweight backend server (logs signups to SQLite)
+
+   npm run start-server
+
+By default the frontend dev server runs on http://localhost:5173 and server on http://localhost:4000.
+
+API
+
+POST /api/signup
+  { name, email }
+  -> 200 { id }
+
+Database & migrations
+
+A simple SQLite schema is provided at server/schema.sql:
+
+CREATE TABLE IF NOT EXISTS signups (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  name TEXT NOT NULL,
+  email TEXT NOT NULL UNIQUE,
+  created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+);
+
+Migration instructions:
+- On the first run the server will apply schema.sql automatically to server/data/signups.db.
+- To re-run migrations manually: sqlite3 server/data/signups.db < server/schema.sql
+
+Testing
+
+Run unit tests (Vitest):
+
+  npm run test
+
+Deployment plan
+
+Option A: Vercel (recommended, free tier)
+- Create a Vercel account and connect the GitHub repo.
+- Root: `/web-frontend`
+- Build command: `npm run build`
+- Output directory: `dist`
+- If you need the /api/signup endpoint in production, deploy the server separately (Render or Railway free tiers) or convert the endpoint to a serverless function.
+
+Option B: GitHub Pages (static only)
+- Build the site (`npm run build`) and publish contents of `dist/` to the `gh-pages` branch (use a GitHub Action or the `gh-pages` npm package).
+- Note: GitHub Pages is static-only; the /api/signup endpoint won't run there.
+
+CI suggestions (GitHub Actions)
+
+- On push to main:
+  - checkout
+  - run `npm ci`
+  - run `npm run test`
+  - run `npm run build`
+  - optionally deploy `dist/` to GitHub Pages or Vercel
+
+Files of interest
+
+- src/components/Landing.tsx (landing UI + form)
+- public/lead_magnet.pdf (lead magnet copy)
+- server/server.cjs (light backend logging to SQLite)
+- server/schema.sql (DB schema)
+
+Verification checklist
+
+- cd /root/watson/web-frontend
+- npm install
+- npm run dev   (frontend)
+- npm run start-server  (backend)
+- Open http://localhost:5173 and submit the form — server/db file is at server/data/signups.db
+
+Changelog
+
+- Modernized landing UI, responsive layout, brand colors, and removed developer/internal messaging from public landing.
