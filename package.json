@@ -12,6 +12,7 @@
     "start-server": "node server/server.js"
   },
   "dependencies": {
+    "@tailwindcss/postcss": "^4.3.0",
     "axios": "^1.16.1",
     "express": "^5.2.1",
     "react": "^19.2.6",
