@@ -1,7 +1,7 @@
-import React, { useState } from 'react'
+import { useState, type FormEvent } from 'react'
 import axios from 'axios'
 
-export default function Landing(): JSX.Element {
+export default function Landing() {
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')

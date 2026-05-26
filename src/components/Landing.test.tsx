@@ -1,7 +1,6 @@
 import { describe, it, expect } from 'vitest'
 import { render, screen } from '@testing-library/react'
 import Landing from './Landing'
-import React from 'react'
 
 describe('Landing component', () => {
   it('renders title and form fields', () => {
