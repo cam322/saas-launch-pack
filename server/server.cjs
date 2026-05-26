@@ -42,7 +42,8 @@ app.post('/api/signup', (req, res) => {
 
 app.get('/api/health', (req, res) => res.json({ ok: true }))
 
-app.get('*', (req, res) => {
+// catch-all route for SPA; use explicit wildcard to avoid router parsing issues
+app.get('/*', (req, res) => {
   const indexPath = path.join(__dirname, '..', 'dist', 'index.html')
   if (fs.existsSync(indexPath)) return res.sendFile(indexPath)
   return res.status(404).json({ message: 'Not Found' })
