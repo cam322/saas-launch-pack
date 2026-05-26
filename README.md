@@ -6,7 +6,7 @@ Quick start
 
 1. Install dependencies
 
-   cd /root/watson/web-frontend
+   cd web-frontend
    npm install
 
 2. Run the frontend dev server
@@ -17,7 +17,7 @@ Quick start
 
    npm run start-server
 
-By default the frontend dev server runs on http://localhost:5173 and server on http://localhost:4000.
+By default the frontend dev server runs on http://localhost:5173 and the server on http://localhost:4000.
 
 API
 
@@ -71,18 +71,47 @@ CI suggestions (GitHub Actions)
 Files of interest
 
 - src/components/Landing.tsx (landing UI + form)
-- public/lead_magnet.pdf (lead magnet copy)
+- public/lead_magnet.pdf (lead magnet)
 - server/server.cjs (light backend logging to SQLite)
 - server/schema.sql (DB schema)
 
-Verification checklist
+Visual style guide (short)
 
-- cd /root/watson/web-frontend
-- npm install
-- npm run dev   (frontend)
-- npm run start-server  (backend)
-- Open http://localhost:5173 and submit the form — server/db file is at server/data/signups.db
+- Brand palette (tailwind theme: brand)
+  - brand-700: #7c3aed (primary purple)
+  - brand-cyan: #06b6d4 (accent cyan)
+  - brand-500: #06b6d4
+  - neutral background and white card surfaces with subtle shadows
+
+- Fonts
+  - Inter (loaded via Google Fonts) with system fallbacks
+
+- Spacing & layout
+  - Mobile-first, single-column stacking with md: two-column grid
+  - Large, accessible CTAs with high-contrast text on gradient backgrounds
 
 Changelog
 
-- Modernized landing UI, responsive layout, brand colors, and removed developer/internal messaging from public landing.
+- 2026-05-26: Modernized landing page and visual theme
+  - Updated Tailwind config with a new 'brand' color palette
+  - Redesigned src/components/Landing.tsx to a mobile-first, accessible layout
+  - Added Google Font (Inter) to index.html
+  - Ensured CTA triggers download of public/lead_magnet.pdf
+  - Removed developer-only guidance and non-product messaging from the public landing
+
+Notes about sensitive/internal information
+
+- The public landing was reviewed and developer-facing guidance and absolute internal paths were removed or converted to relative references so the page contains only product/service messaging. No API keys, tokens, or emails are present in the landing page component.
+
+Verification steps
+
+1. From the project root:
+   - cd web-frontend
+   - npm install
+   - npm run dev
+   - npm run start-server (in a separate terminal)
+
+2. Open http://localhost:5173 in your browser.
+3. Complete the form and submit; on success the lead magnet at /lead_magnet.pdf should download and the API will receive the signup via POST /api/signup.
+
+If anything looks off, open the files listed above and verify the CTA uses /lead_magnet.pdf and that the tailwind.config.cjs contains theme.extend.colors.brand entries.
