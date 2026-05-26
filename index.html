@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>SaaS Launch Pack — Templates & Playbook</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>body{font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial}</style>
+</head>
+<body class="bg-gradient-to-b from-indigo-700 via-purple-600 to-cyan-500 min-h-screen flex items-center justify-center p-6">
+  <main class="max-w-4xl w-full bg-white/95 backdrop-blur-sm rounded-3xl shadow-2xl p-8 md:p-16">
+    <header class="mb-6 text-center">
+      <h1 class="text-3xl md:text-4xl font-extrabold text-gray-900">SaaS Launch Pack</h1>
+      <p class="mt-3 text-gray-700">A zero-budget, battle-tested bundle: outreach templates, a one-page pitch outline, and an operational playbook to land your first customers.</p>
+    </header>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+      <section>
+        <h2 class="text-xl font-semibold text-gray-800 mb-3">What's inside</h2>
+        <ul class="space-y-3 text-gray-700">
+          <li class="flex items-start gap-3"><span class="w-3 h-3 rounded-full bg-indigo-600 mt-1"></span>Targeted cold + follow-up email sequences</li>
+          <li class="flex items-start gap-3"><span class="w-3 h-3 rounded-full bg-indigo-600 mt-1"></span>One-page pitch outline for calls and landing pages</li>
+          <li class="flex items-start gap-3"><span class="w-3 h-3 rounded-full bg-indigo-600 mt-1"></span>Notion-ready SOP and CSV prospect list</li>
+          <li class="flex items-start gap-3"><span class="w-3 h-3 rounded-full bg-indigo-600 mt-1"></span>Landing page copy snippets and outreach scripts</li>
+        </ul>
+        <p class="mt-4 text-sm text-gray-600">No ads. No paid channels. Bootstrap-friendly templates to get paying users quickly.</p>
+      </section>
+
+      <aside class="bg-gray-50 p-4 rounded-lg">
+        <form id="signup" class="space-y-4">
+          <div>
+            <label class="sr-only" for="name">Name</label>
+            <input id="name" name="name" type="text" required placeholder="Your name" class="w-full rounded-md border border-gray-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+
+          <div>
+            <label class="sr-only" for="email">Email</label>
+            <input id="email" name="email" type="email" required placeholder="you@company.com" class="w-full rounded-md border border-gray-200 px-3 py-2 focus:outline-none focus:ring-2 focus:ring-indigo-500" />
+          </div>
+
+          <div>
+            <button id="cta" type="submit" class="w-full rounded-md bg-indigo-600 text-white font-semibold px-4 py-2">Download the lead magnet</button>
+          </div>
+
+          <p class="text-xs text-gray-500">We only use your email to send the download link. No spam.</p>
+        </form>
+      </aside>
+    </div>
+  </main>
+
+  <script>
+    document.getElementById('signup').addEventListener('submit', function(e){
+      e.preventDefault();
+      // client-side: trigger download
+      const a = document.createElement('a');
+      a.href = '/lead_magnet.pdf';
+      a.download = 'lead_magnet.pdf';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      // optionally, you can POST to /api/signup if a server exists
+    });
+  </script>
+</body>
+</html>
