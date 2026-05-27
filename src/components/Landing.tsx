@@ -18,7 +18,7 @@ export default function Landing() {
         setMessage('Thanks — your download will start shortly.')
         // trigger download of lead magnet in public directory
         const a = document.createElement('a')
-        a.href = '/lead_magnet.pdf'
+        a.href = `${import.meta.env.BASE_URL}lead_magnet.pdf`
         a.download = 'lead_magnet.pdf'
         document.body.appendChild(a)
         a.click()
