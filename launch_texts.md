@@ -1,20 +1,59 @@
-Launch copy & posting templates
+# Launch Copy and Posting Templates
 
-1) Launch tweet (thread starter)
-Tweet 1:
-Launching a tiny, $0-first playbook: "SaaS $01$5k Launch Pack" 1 templates I used to book paying customers in week 1. No ads, no VC. Free sample for first 20 founders. Link: <landing-url>
+## X/Twitter launch post
+I built a $0-first launch kit for SaaS founders who need first paid customers without ads.
 
-Tweet 2 (thread):
-How it works: 1) pick a niche 2) run 50-person outreach 3) offer a $299 quick test. Ill post the exact email sequence & SOP. DM for the free sample.
+It includes:
+- offer canvas
+- prospecting SOP
+- cold email + LinkedIn cadences
+- paid pilot proposal
+- 3-day delivery SOP
+- 30-day execution calendar
 
-2) Reddit post (r/Entrepreneur or r/IndieHackers)
-Title: How I built a $1k launch route for SaaS with $0 ad spend (templates + audit process)
-Body: Short summary of the 7-step playbook + link to landing page. Call to action: "First 20 founders get a free sample. Ask me for a 1-page audit for your site."
+Free sample: <landing-url>
 
-3) DM script for targeted outreach (Twitter / LinkedIn)
-Hi {{first_name}}, quick one: saw {{company}} and have a 60s audit that usually surfaces 1 concrete fix to increase paid conversions. Ill send it free if you want. No call required.
+## X/Twitter thread outline
+1. Most SaaS founders do not need more traffic. They need 50 targeted conversations.
+2. Pick one niche, one pain, one fast paid offer.
+3. Offer a $299 quick-win audit, not a giant consulting package.
+4. Send 10 personalized messages/day for 5 days.
+5. Deliver first wins in 3 days, collect proof, then raise price.
+6. I packaged the whole system here: <landing-url>
 
-4) Cold community post (Facebook groups / Product Hunt comments)
-Short: "Offering 5 free 60s conversion audits for SaaS founders today. Reply with your site and Ill send your quick fix."
+## Reddit / Indie Hackers post
+Title: I packaged a $0-ad-spend launch system for SaaS founders
 
-Replace <landing-url> with your hosted landing page (I can deploy or you can).
+Body:
+I kept seeing founders overbuild before they had a sales motion, so I built a simple launch kit around one idea: get 50 targeted conversations before changing the product again.
+
+The kit includes the offer canvas, prospecting SOP, email/LinkedIn cadence, audit template, paid pilot proposal, and 30-day calendar.
+
+The default offer is a $299 quick-win conversion audit for tiny B2B SaaS teams.
+
+Happy to share the free sample or do a teardown for the first few founders who comment.
+
+## LinkedIn post
+Early SaaS founders usually do not need ads.
+They need a tighter offer and more direct conversations.
+
+My 30-day launch system:
+1. Pick one narrow ICP.
+2. Create a $299 quick-win audit.
+3. Build 50 prospects.
+4. Send a specific 5-touch cadence.
+5. Deliver in 3 days.
+6. Collect proof.
+7. Upsell implementation.
+
+I packaged the templates and SOP here: <landing-url>
+
+## Community post
+Offering 5 free 60-second SaaS conversion audits today.
+
+Drop your site and I will send:
+- 1 friction point
+- 1 suggested fix
+- what I would test first
+
+No pitch required. If you want the full system, I packaged the templates here: <landing-url>

@@ -1,37 +1,42 @@
-Notion SOP: Outreach & Conversion Tracking (copy into a Notion page)
+# Notion SOP: Outreach and Conversion Tracking
 
-Title: Outreach SOP  SaaS $0$5k Launch Pack
+Copy this into Notion, Google Sheets, or Airtable.
 
-1) Prospecting (Day 0)
-- Niche: PROJECT MANAGEMENT TOOLS -> 50 targets
-- Data columns: Company, Prospect name, Title, LinkedIn URL, Email, Last contact date, Sequence stage, Reply, Booked (Y/N), Revenue, Notes
+## Database columns
+Company, Website, Prospect name, Title, Email, LinkedIn, Public signal, One-line issue, Suggested fix, Stage, Last contacted, Reply, Booked, Revenue, Notes
 
-2) Outreach cadence (Days 111)
-- Day 1: Email 1 + LinkedIn connection note (if available)
-- Day 3: Email 2 + LinkedIn DM
-- Day 7: Email 3 (pricing/ask)
-- Day 10: Final LinkedIn follow-up
+## Stages
+- Added
+- Email 1 sent
+- DM 1 sent
+- Follow-up sent
+- Replied
+- Call booked
+- Paid audit sold
+- Delivered
+- Lost
 
-3) Qualification & Delivery
-- If reply: move to call scheduling. Use 15-min discovery -> deliver 1 quick fix in 3 days. Charge $299 for audit & fix.
-- After delivery: ask for testimonial and 1 referral. Log revenue + time spent.
+## Daily routine
+1. Add 5-10 prospects.
+2. Write one specific issue and one suggested fix per prospect.
+3. Send today's emails and DMs.
+4. Respond to replies.
+5. Update the dashboard.
 
-4) Metrics to track (KPIs)
-- Replies / 50 prospects
-- Meetings booked / 50 prospects
-- Deals won / meetings
-- Revenue / hour
+## Cadence
+- Day 1: Email 1 + LinkedIn connection note
+- Day 3: Email 2 + LinkedIn DM 1
+- Day 6: Paid pilot ask
+- Day 9: Process/proof follow-up
+- Day 12: Breakup
 
-5) Scripts (copy/paste)
-- Use cold email templates from pack. Personalize the one-line fix from a 60s site scan.
+## KPIs
+- Replies per 50 prospects
+- Positive replies per 50 prospects
+- Calls booked
+- Paid audits sold
+- Revenue
+- Hours spent
 
-6) Daily routine (30m)
-- Prospect 10 new companies (first run: 50).  
-- Send days messages and move replies to calendar.  
-- Update Notion table with outcomes.
-
-7) Growth loop
-- After 3 paid customers: add testimonials to landing page and increase outreach volume by 2x.
-
-Template table CSV header (export-ready):
-Company,Name,Title,LinkedIn,Email,LastContact,Stage,Reply,Booked,Revenue,Notes
+## Decision rule
+If no replies after 50 prospects, do not blame the market. Tighten the niche and personalization line first.

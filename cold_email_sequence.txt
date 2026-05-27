@@ -1,28 +1,45 @@
-Cold Email Sequence (SaaS to SMBs) — Short, direct, value-first
+Cold Email Sequence — SaaS $0 to $5k Launch Kit
 
-Target niche example: Project management tools for 215 person digital agencies
+Use the upgraded full cadence here:
+03_outreach/email_cadence.md
 
-Email 1 — Cold value opener (subject: Quick idea to get more paid clients)
+Quick version:
+
+Email 1 — Specific audit offer
+Subject: quick fix for {{company}}
+
 Hi {{first_name}},
-Quick one: I looked at {{company}} and noticed your onboarding flow drops at the trial -> paid step. Id be happy to send one quick fix you can implement in 24h that typically lifts conversion by ~10%.
-If you want it, tell me the best email to send the 60s audit to.
-— {{you}}
 
-Email 2 — Follow-up + micro proof (2d later)
-Subject: 60s audit for {{company}}
+I looked at {{company}} and noticed {{one_line_issue}}.
 
-{{first_name}}  did you want that 60s audit? Heres the one quick thing Id change: [one-liner fix]. If you want Ill send the full 60s audit and a short plan to implement it.
+One quick test: {{suggested_fix}}.
 
-Email 3 — Clear ask (5d later)
-Subject: 2-minute fix I can deliver this week
+I am putting together short 60-second conversion audits for {{niche}} founders. Want me to send you the quick audit for {{company}}? No call needed.
 
-If improving trial-to-paid by 10% is worth testing, I can run a quick audit + implement the first fix for $299. No setup, results in 3 business days. Want to try one paid test?
+— {{your_name}}
 
-LinkedIn DM (short variation)
-Message 1:
-Hey {{first_name}}, quick thing: noticed {{company}}'s trial flow. I can send a 60s audit with one fix to lift conversions. Want it? — {{you}}
+Email 2 — Bump with value
+Subject: {{company}} audit note
 
-DM Follow-up (if no reply, 3d later):
-Still up for the 60s audit? Ill send one concrete fix you can test in 24h.
+{{first_name}}, quick bump.
 
-Notes: personalize the one-liner fix from a quick site check. Always lead with outcome and a low-friction ask ("send audit" or "$299 test").
+The reason I flagged this: {{business_reason}}. Small CTA/onboarding friction can quietly kill trial-to-paid conversion.
+
+I can send the 60-second version with the top 3 fixes. Want it?
+
+— {{your_name}}
+
+Email 3 — Paid pilot ask
+Subject: 3-day quick win
+
+If improving {{company}}'s signup/demo flow is worth testing, I can do the full audit + priority fix plan for $299.
+
+You get:
+- 3 conversion leaks
+- 1 priority fix
+- implementation notes
+- 15-minute walkthrough
+
+If I do not find one actionable fix, you pay $0.
+
+Worth testing?

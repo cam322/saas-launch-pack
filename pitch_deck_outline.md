@@ -1,24 +1,56 @@
-1-Page Pitch Deck Outline (SaaS $0→$5k)
+# 1-Page Pitch Deck Outline — SaaS $0→$5k
 
-Slide 1 — One-liner
-Product name | one-line outcome ("Get 10% more paid conversions from trials in 7 days")
+Use this for calls, landing copy, or a one-page PDF.
 
-Slide 2 — Problem
-Short bullets: what SMBs lose daily (lost revenue, churn), example metric.
+## 1. One-liner
+`[Product / offer] helps [ICP] get [outcome] without [painful alternative].`
 
-Slide 3 — Solution
-Your micro-offer: audit + 1 quick fix + optional implementation. Price, timeframe.
+Example:
+> We help tiny B2B SaaS teams find and fix one signup conversion leak in 3 business days.
 
-Slide 4 — Why now / market
-Market size (concise), niche-specific pain, why this is a quick win.
+## 2. Problem
+State the costly friction:
+- Buyers land on the site but do not understand the outcome.
+- Trial/demo CTAs are vague.
+- Onboarding creates hesitation before value is clear.
+- Founders keep building instead of talking to qualified prospects.
 
-Slide 5 — Traction (proof)
-If none: show hypothetical quick wins (A/B test examples). After first sales: screenshots / testimonials / % lift.
+## 3. Solution
+The micro-offer:
+- 60-second teaser audit
+- $299 full quick-win audit
+- 3 conversion leaks
+- 1 priority fix
+- delivered in 3 business days
 
-Slide 6 — Business model
-Price points: $299 audit; $799 implementation; $x/mo retainers. CAC assumptions if needed.
+## 4. Why now
+Tiny SaaS teams need revenue before scale. Paid ads are expensive. Manual outbound plus a focused quick-win offer creates immediate sales signal.
 
-Slide 7 — The ask
-What you want: 10 pilot customers, feedback loop, referrals.
+## 5. Proof
+If no testimonials yet, use process proof:
+- screenshots from audits
+- before/after CTA examples
+- teardown snippets
+- first free audit reactions
 
-One-liner closing: "Book a 15-minute pilot demo and Ill share the first fix live."
+After first customers, add:
+- testimonial quote
+- conversion metric if available
+- revenue generated
+- implementation screenshot
+
+## 6. Business model
+- Free teaser audit: lead generation
+- $299 audit: first revenue
+- $799 implementation sprint: upsell
+- $1,500/mo retainer: recurring backend
+
+## 7. Ask
+For prospects:
+> Want me to run the 60-second audit for your site?
+
+For paid pilots:
+> Want me to run the $299 quick-win audit this week?
+
+For partners:
+> Introduce me to 2 SaaS founders who need more trial/demo conversions.
